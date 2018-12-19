@@ -1,0 +1,24 @@
+{
+  "name": "@rndm/render-plugin-react-navigation",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "scripts": {},
+  "author": "RNDM",
+  "license": "Apache-2.0",
+  "description": "RNDM Render Plugin: React Navigation. React Navigation functionality for RNDM Render",
+  "homepage": "https://github.com/rndm-com/rndm-render-plugin-react-navigation#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rndm-com/rndm-render-plugin-react-navigation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rndm-com/rndm-render-plugin-react-navigation/issues"
+  },
+  "bin": {
+    "rndm-render-plugin-react-navigation": "cli/index.js"
+  },
+  "dependencies": {
+    "react-navigation": "^2.0.1",
+    "react-navigation-redux-helpers": "1.0.6"
+  }
+}
