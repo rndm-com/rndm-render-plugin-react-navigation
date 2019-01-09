@@ -22,8 +22,8 @@ const components = Object.keys(navigators).map(type => ({
   type,
   value: ({ routes, options, id }) => {
     const Navigator = navigators[type](convertRoutesToComponents(routes), options);
-    const ref = ref => set(methods, `react-navigation.navigators.${id}.dispatch`, ref.navigation.dispatch);
-    return <Navigator ref={ref}/>;
+    const reference = ref => set(methods, `react-navigation.navigators.${id}.dispatch`, get(ref, 'dispatch', get(ref, 'navigation.dispatch')));
+    return <Navigator ref={reference}/>;
   }
 }));
 
