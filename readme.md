@@ -226,9 +226,9 @@ https://github.com/rndm-com/rndm-render-plugin-react-navigation/tree/master/exam
 
 ## CLI
 
-The CLI for this plugin adds a number of rewired packages to the '_supporting/rewire_modules.json' file. These are files that needs to be run through the Babel Compiler prior to usage when running hte React Native Web version of your project.
+The CLI for this plugin adds a number of rewired packages to the '_supporting/rewire_modules.json' file. These are files that needs to be run through the Babel Compiler prior to usage when running the React Native Web version of your project.
 
-To Run this you can call the following script in the commandline:
+To Run this you can call the following script in the command line:
 
 ```sh
 render-plugin-react-navigation init
