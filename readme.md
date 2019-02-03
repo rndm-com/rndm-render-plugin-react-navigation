@@ -1,12 +1,12 @@
-# RNDM Render Plugin: React Navigation
+# [RNDM](https://www.rndm.com) Render Plugin: React Navigation
 
 ## About
 
-This plugin provides functionality for [RNDM Render package](https://github.com/rndm-com/rndm-render) when integrating React Navigation.
+This plugin provides functionality for [RNDM Render package](https://www.rndm.com/docs/rndm-render) when integrating React Navigation.
 
 ## Installation
 
-If you have not already done so, then please ensure you have installed the [RNDM Render](https://github.com/rndm-com/rndm-render) and [RNDM Plugin: Core](https://github.com/rndm-com/rndm-render-plugin-core) package.
+If you have not already done so, then please ensure you have installed the [RNDM Render](https://www.rndm.com/docs/rndm-render) and [RNDM Plugin: Core](https://www.rndm.com/docs/rndm-render/plugin/core) package.
 
 ### From NPM
 
@@ -243,3 +243,5 @@ Alternatively, add the following into the '_supporting/rewire_modules.json' file
 "react-native-safe-area-view",
 ...
 ```
+
+Check out the [Playground](https://www.rndm.com/playground) page to see how these features work.
