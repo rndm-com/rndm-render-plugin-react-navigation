@@ -1,14 +1,15 @@
-import { NavigationActions, StackActions } from 'react-navigation';
+import { CommonActions, StackActions, DrawerActions, TabActions } from '@react-navigation/native';
+
+const actionToMethods = (actions, key) => Object.keys(actions).filter(i => typeof actions[i] === 'function').map(i => ({
+  type: ['key', i].join('.'),
+  value: (...args) => actions[i](...args),
+}))
 
 const methods = [
-  ...Object.keys(NavigationActions).filter(i => typeof NavigationActions[i] === 'function').map(i => ({
-    type: ['NavigationActions', i].join('.'),
-    value: (...args) => NavigationActions[i](...args),
-  })),
-  ...Object.keys(StackActions).filter(i => typeof StackActions[i] === 'function').map(i => ({
-    type: ['StackActions', i].join('.'),
-    value: (...args) => StackActions[i](...args),
-  })),
+  ...actionToMethods(CommonActions, 'CommonActions'),
+  ...actionToMethods(StackActions, 'StackActions'),
+  ...actionToMethods(DrawerActions, 'DrawerActions'),
+  ...actionToMethods(TabActions, 'TabActions'),
 ];
 
 export default methods;
